@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Resource Hub - Sign Up</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e6f5ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    nav {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1c6ea4;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #f0f0f0;
+    }
+
+    /* Form Container */
+    .form-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 320px;
+    }
+
+    .form-card h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-field {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .input-field input,
+    .input-field select {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      background: #d6f1ff;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .form-card button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #1c6ea4;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-card button:hover {
+      background: #155580;
+    }
+
+    .form-card p {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .form-card p a {
+      text-decoration: none;
+      color: #1c6ea4;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      background: #fff;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Student Resource Hub</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sign up</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sign Up Form -->
+  <div class="form-container">
+    <div class="form-card">
+      <h2>Create an Account</h2>
+      <form>
+        <div class="input-field">
+          <input type="text" placeholder="Name" required>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="input-field">
+          <select required>
+            <option value="">Select Profession</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="alumni">Alumni</option>
+            <option value="developer">Developer</option>
+          </select>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Student Resource Hub. All rights reserved.
+  </footer>
+</body>
+</html>

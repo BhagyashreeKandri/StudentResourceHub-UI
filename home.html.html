@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Resource Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f9ff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #008CBA;
+      color: white;
+    }
+
+    header .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h2, h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .resource-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .resource-section p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #005f6a;
+    }
+
+    footer {
+      background-color: #008CBA;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer .social-links {
+      margin-top: 10px;
+    }
+
+    footer .social-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Add your logo here -->
+      <img src="logo.png" alt="Student Resource Hub">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#student">Student</a></li>
+        <li><a href="#alumni">Alumni</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="sign-up.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h2>About Student Resource Hub</h2>
+    <p>A web platform for XYZ’s engineering students where students, teachers and alumni can share and access academic resources in one central platform. Easily upload papers, projects, resources, or find study resources.</p>
+  </section>
+
+  <section id="faculty" class="resource-section">
+    <h3>Faculty</h3>
+    <p>Faculty can upload past papers, approve student submissions and share announcements to enhance student learning.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section id="student" class="resource-section">
+    <h3>Student</h3>
+    <p>Students can find resources, question papers, project files, industrial notes, research papers, and faculty’s work to help them in their learning process – all in one place.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section id="alumni" class="resource-section">
+    <h3>Alumni</h3>
+    <p>An opportunity to contribute past resources, mentor students, and share career guidance, strengthening the alumni-student connection.</p>
+    <button>Get Started</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Resource Hub. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
