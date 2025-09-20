@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resource Hub</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f9ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #56ccf2;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-left h1 {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            padding: 30px;
+        }
+
+        .discussion-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .discussion-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .comment-box {
+            background-color: #f7faff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .comment img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .comment-content {
+            max-width: 500px;
+        }
+
+        .comment-content h3 {
+            font-size: 16px;
+            color: #56ccf2;
+            margin-bottom: 5px;
+        }
+
+        .comment-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .input-section {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .input-section input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .input-section button {
+            padding: 10px 15px;
+            background-color: #56ccf2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-section button:hover {
+            background-color: #4fa3c2;
+        }
+
+        .upload-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .upload-btn:hover {
+            background-color: #ff5c47;
+        }
+
+        footer {
+            background-color: #56ccf2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Left part of the header (logo and project name) -->
+        <div class="header-left">
+            <img src="https://via.placeholder.com/40" alt="Logo">
+            <h1>Student Resource Hub</h1>
+        </div>
+
+        <!-- Right part of the header (navigation links) -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Login</a>
+            <a href="#">About</a>
+            <a href="#">Notifications</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="discussion-section">
+            <h2>Your Space to Discuss, Share & Request Resources</h2>
+
+            <!-- Comment 1 -->
+            <div class="comment-box">
+                <div class="comment">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <div class="comment-content">
+                        <h3>Rohan Gupta</h3>
+                        <p>Can someone please upload Unit 4 notes for Operating Systems?</p>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="comment">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <div class="comment-content">
+                        <h3>Aanya Sharma</h3>
+                        <p>I have uploaded the Unit 4 notes for Operating Systems under the resources section.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Comment Section -->
+            <div class="input-section">
+                <input type="text" placeholder="Add a comment...">
+                <button>Comment</button>
+            </div>
+
+            <!-- Upload Resource Button -->
+            <button class="upload-btn">Upload Resource</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Resource Hub, All rights reserved</p>
+    </footer>
+
+</body>
+</html>

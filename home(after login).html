@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resource Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eaf2ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4f76f0;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome-section h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .welcome-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section img {
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        /* Flexbox Container for Filters (Left) and Resources (Right) */
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Left sidebar (filter section) */
+        .filter-section {
+            width: 25%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-section h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .filter-section label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .filter-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .filter-section .apply-btn {
+            background-color: #00b0b0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-section .apply-btn:hover {
+            background-color: #009d9d;
+        }
+
+        /* Main content (Available Resources) */
+        .available-resources {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .resource-card {
+            background-color: #cfe2ff;
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .resource-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .resource-card h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .resource-card .btn {
+            background-color: #4f76f0;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .resource-card .btn:hover {
+            background-color: #3b63c2;
+        }
+
+        .resource-card .rating {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            font-size: 12px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Student Resource Hub">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Notifications</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h1>Welcome back, [Student Name]!</h1>
+        <p>Your journey doesn't stop here – it begins again today. Dive into new ideas, share your knowledge, and connect with peers who are chasing the same dreams. Success grows stronger when we grow together.</p>
+        <p>What are you learning today?</p>
+        <img src="welcome-illustration.png" alt="Illustration of students learning">
+    </section>
+
+    <!-- Content Section (Filters + Resources) -->
+    <div class="content-container">
+        <!-- Left Filter Section -->
+        <div class="filter-section">
+            <h3>Filters</h3>
+            <label><input type="checkbox" /> Computer Science</label>
+            <label><input type="checkbox" /> Mathematics</label>
+            <label><input type="checkbox" /> Data Science</label>
+            <label><input type="checkbox" /> Design</label>
+            <label><input type="checkbox" /> Business</label>
+            <button class="apply-btn">Apply Filter</button>
+        </div>
+
+        <!-- Right Resources Section -->
+        <div class="available-resources">
+            <!-- Resource Card 1 -->
+            <div class="resource-card">
+                <img src="resource1.jpg" alt="Resource Image">
+                <h3>Data Structures & Algorithms</h3>
+                <button class="btn">View</button>
+                <button class="btn">Share</button>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+
+            <!-- Resource Card 2 -->
+            <div class="resource-card">
+                <img src="resource2.jpg" alt="Resource Image">
+                <h3>Object Oriented Programming</h3>
+                <button class="btn">View</button>
+                <button class="btn">Share</button>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+
+            <!-- Resource Card 3 -->
+            <div class="resource-card">
+                <img src="resource3.jpg" alt="Resource Image">
+                <h3>Introduction to AI</h3>
+                <button class="btn">View</button>
+                <button class="btn">Share</button>
+                <div class="rating">
+                    ★★★☆☆
+                </div>
+            </div>
+
+            <!-- Additional resource cards can be added here -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Student Resource Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
